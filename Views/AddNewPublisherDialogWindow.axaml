@@ -1,0 +1,18 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="300" d:DesignHeight="300"
+		CanResize="False"
+        x:Class="LibraryCoordinatorApp.AddNewPublisherDialogWindow"
+        Title="Добавить новое издательство">
+	<StackPanel Margin="20">
+		<TextBlock Margin="0 5" >Название издательства:</TextBlock>
+		<TextBox  Watermark="Введите название издательства"/>
+		<TextBlock Margin="0 5" >Адресс:</TextBlock>
+		<TextBox  Watermark="Введите адресс"/>
+		<TextBlock Margin="0 5" >Номер телефона:</TextBlock>
+		<TextBox  Watermark="+88005353535"/>
+		<Button Margin="0 20">Добавить</Button>
+	</StackPanel>
+</Window>

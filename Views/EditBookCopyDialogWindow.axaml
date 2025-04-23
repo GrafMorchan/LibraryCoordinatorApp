@@ -1,0 +1,24 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="300" d:DesignHeight="300"
+		CanResize="False"
+        x:Class="LibraryCoordinatorApp.EditBookCopyDialogWindow"
+        Title="Изменить копию книги">
+	<StackPanel Margin="20">
+		<TextBlock Margin="0 5">Новая книга:</TextBlock>
+		<ComboBox></ComboBox>
+		<TextBlock Margin="0 5">Новый статус:</TextBlock>
+		<ComboBox SelectedIndex="0" MaxDropDownHeight="100">
+			<ComboBoxItem>Available</ComboBoxItem>
+			<ComboBoxItem>Borrowed</ComboBoxItem>
+			<ComboBoxItem>Lost</ComboBoxItem>
+			<ComboBoxItem>Damaged4</ComboBoxItem>
+		</ComboBox>
+		<TextBlock Margin="0 5" >Новый штрихкод:</TextBlock>
+		<TextBox  Watermark="Введите штрих-код"/>
+		<Button Margin="0 20">Изменить</Button>
+	</StackPanel>
+</Window>
+

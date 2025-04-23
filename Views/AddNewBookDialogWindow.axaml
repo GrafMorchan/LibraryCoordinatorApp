@@ -1,0 +1,22 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="300" d:DesignHeight="400"
+		CanResize="False"
+        x:Class="LibraryCoordinatorApp.AddNewBookDialogWindow"
+        Title="Добавить новую книгу">
+	<StackPanel Margin="20">
+		<TextBlock Margin="0 5" >Название книги:</TextBlock>
+		<TextBox  Watermark="Введите название книги"/>
+		<TextBlock Margin="0 5">Автор:</TextBlock>
+		<ComboBox></ComboBox>
+		<TextBlock Margin="0 5">Жанр:</TextBlock>
+		<ComboBox></ComboBox>
+		<TextBlock Margin="0 5">Издательство:</TextBlock>
+		<ComboBox></ComboBox>
+		<TextBlock Margin="0 5" >ISBN:</TextBlock>
+		<TextBox  Watermark="Введите ISBN"/>
+		<Button Margin="0 20">Добавить</Button>
+	</StackPanel>
+</Window>
