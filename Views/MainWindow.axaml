@@ -10,71 +10,119 @@
         Icon="/Assets/avalonia-logo.ico"
         Title="LibraryCoordinatorApp">
 
-    <Design.DataContext>
-        <!-- This only sets the DataContext for the previewer in an IDE,
-             to set the actual DataContext for runtime, set the DataContext property in code (look at App.axaml.cs) -->
-        <vm:MainWindowViewModel/>
-    </Design.DataContext>
+	<Window.Styles>
+		<StyleInclude Source="/Styles/MainStyle.axaml"/>
+	</Window.Styles>
 
 	<TabControl Margin="5">
 		<TabItem Header="Авторы">
 			<StackPanel HorizontalAlignment="Left"
 				VerticalAlignment="Top"
 				Spacing="10">
-				<DataGrid Margin="20" ItemsSource="{Binding}"
+				<Border Height="450" Width="850">
+					<Border Classes="ViewBox">
+						<StackPanel Orientation="">
+							<Label>Окно отображений</Label>
+							<DataGrid Margin="20" ItemsSource="{Binding Authors}"
 				  IsReadOnly="True"
 				  GridLinesVisibility="All"
 				  BorderThickness="1" BorderBrush="Gray">
-				</DataGrid>
-				<Button>Добавить автора</Button>
+							</DataGrid>
+						</StackPanel>
+					</Border>
+				</Border>
+				<StackPanel Orientation="Horizontal">
+					<Button>Добавить автора</Button>
+					<Button>Редактировать автора</Button>
+				</StackPanel>
 			</StackPanel>
 		</TabItem>
 		<TabItem Header="Жанры">
 			<StackPanel HorizontalAlignment="Left"
 				VerticalAlignment="Top"
 				Spacing="10">
-				<DataGrid Margin="20" ItemsSource="{}"
+				<Border Height="450" Width="850">
+					<Border Classes="ViewBox">
+						<StackPanel Orientation="">
+							<Label>Окно отображений</Label>
+							<DataGrid Margin="20" ItemsSource="{Binding Authors}"
 				  IsReadOnly="True"
 				  GridLinesVisibility="All"
 				  BorderThickness="1" BorderBrush="Gray">
-				</DataGrid>
-				<Button>Добавить жанр</Button>
+							</DataGrid>
+						</StackPanel>
+					</Border>
+				</Border>
+				<StackPanel Orientation="Horizontal">
+					<Button Command="{Binding }">Добавить жанр</Button>
+					<Button Command="{Binding }">Редактировать жанр</Button>
+				</StackPanel>
 			</StackPanel>
 		</TabItem>
 		<TabItem Header="Издательства">
 			<StackPanel HorizontalAlignment="Left"
 				VerticalAlignment="Top"
 				Spacing="10">
-				<DataGrid Margin="20" ItemsSource="{}"
+				<Border Height="450" Width="850">
+					<Border Classes="ViewBox">
+						<StackPanel Orientation="">
+							<Label>Окно отображений</Label>
+							<DataGrid Margin="20" ItemsSource="{Binding Authors}"
 				  IsReadOnly="True"
 				  GridLinesVisibility="All"
 				  BorderThickness="1" BorderBrush="Gray">
-				</DataGrid>
-				<Button>Добавить издательство</Button>
+							</DataGrid>
+						</StackPanel>
+					</Border>
+				</Border>
+				<StackPanel Orientation="Horizontal">
+					<Button Command="{Binding }">Добавить издательство</Button>
+					<Button Command="{Binding }">Редактировать издательство</Button>
+				</StackPanel>
 			</StackPanel>
 		</TabItem>
 		<TabItem Header="Книги">
 			<StackPanel HorizontalAlignment="Left"
 				VerticalAlignment="Top"
 				Spacing="10">
-				<DataGrid Margin="20" ItemsSource="{}"
+				<Border Height="450" Width="850">
+					<Border Classes="ViewBox">
+						<StackPanel Orientation="">
+							<Label>Окно отображений</Label>
+							<DataGrid Margin="20" ItemsSource="{Binding Authors}"
 				  IsReadOnly="True"
 				  GridLinesVisibility="All"
 				  BorderThickness="1" BorderBrush="Gray">
-				</DataGrid>
-				<Button>Добавить книгу</Button>
+							</DataGrid>
+						</StackPanel>
+					</Border>
+				</Border>
+				<StackPanel Orientation="Horizontal">
+					<Button Command="{Binding }">Добавить книгу</Button>
+					<Button Command="{Binding }">Редактировать книгу</Button>
+				</StackPanel>
 			</StackPanel>
 		</TabItem>
 		<TabItem Header="Библиотечные экземпляры">
 			<StackPanel HorizontalAlignment="Left"
 				VerticalAlignment="Top"
 				Spacing="10">
-				<DataGrid Margin="20" ItemsSource="{}"
+				<Border Height="450" Width="850">
+					<Border Classes="ViewBox">
+						<StackPanel Orientation="">
+							<Label>Окно отображений</Label>
+							<DataGrid Margin="20" ItemsSource="{Binding Authors}"
 				  IsReadOnly="True"
 				  GridLinesVisibility="All"
 				  BorderThickness="1" BorderBrush="Gray">
-				</DataGrid>
-				<Button>Добавить экземпляр</Button>
+							</DataGrid>
+						</StackPanel>
+					</Border>
+				</Border>
+				<StackPanel Orientation="Horizontal">
+					<Button Command="{Binding }">Добавить экземпляр</Button>
+					<Button Command="{Binding }">Редактировать экземпляр</Button>
+				</StackPanel>
 			</StackPanel>
 		</TabItem>
 	</TabControl>
